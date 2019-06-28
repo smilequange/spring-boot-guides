@@ -10,4 +10,20 @@ public class JwtApplication {
         SpringApplication.run(JwtApplication.class, args);
     }
 
+    /*@Bean
+    public FilterRegistrationBean loginFilter(){
+        FilterRegistrationBean bean = new FilterRegistrationBean();
+        bean.setFilter(new JwtLoginFilter());
+        bean.addUrlPatterns("/login");
+        return bean;
+    }
+
+    @Bean
+    public FilterRegistrationBean authenticationFilter(){
+        FilterRegistrationBean bean = new FilterRegistrationBean();
+        bean.setFilter(new JwtAuthenticationFilter());
+//        bean.addUrlPatterns("/**");
+        return bean;
+    }*/
+
 }
