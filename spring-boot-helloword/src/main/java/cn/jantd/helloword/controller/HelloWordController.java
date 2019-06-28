@@ -1,4 +1,4 @@
-package com.peach.helloword.controller;
+package cn.jantd.helloword.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
