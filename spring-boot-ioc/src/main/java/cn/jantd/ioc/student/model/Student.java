@@ -1,5 +1,12 @@
 package cn.jantd.ioc.student.model;
 
+/**
+ * @Description
+ * @Author  圈哥
+ * @Version V1.0.0
+ * @Since 1.0
+ * @Date 2019/7/3
+ */
 public class Student {
     /**
      * 名称

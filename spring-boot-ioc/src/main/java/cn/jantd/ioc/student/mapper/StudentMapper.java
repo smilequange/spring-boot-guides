@@ -3,6 +3,14 @@ package cn.jantd.ioc.student.mapper;
 import cn.jantd.ioc.student.model.Student;
 import org.springframework.stereotype.Component;
 
+
+/**
+ * @Description
+ * @Author  圈哥
+ * @Version V1.0.0
+ * @Since 1.0
+ * @Date 2019/7/3
+ */
 //@Repository
 @Component("studentMapper")
 public class StudentMapper {

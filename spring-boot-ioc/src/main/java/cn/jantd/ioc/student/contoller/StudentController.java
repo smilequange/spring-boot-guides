@@ -5,6 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
+/**
+ * @Description
+ * @Author  圈哥
+ * @Version V1.0.0
+ * @Since 1.0
+ * @Date 2019/7/3
+ */
 @Controller("studentController")
 public class StudentController {
 //    @Resource(name = "studentService")
