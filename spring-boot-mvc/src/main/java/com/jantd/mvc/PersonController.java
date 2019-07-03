@@ -1,6 +1,5 @@
 package com.jantd.mvc;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
@@ -10,10 +9,7 @@ import java.util.Map;
 @RequestMapping("/person")
 public class PersonController {
 
-
-
-
-    @GetMapping("/get/{id}")
+    @GetMapping("/{id}")
     public Person getPerson(@PathVariable Long id) {
         Person person = new Person();
         person.setAge(20);
@@ -22,16 +18,10 @@ public class PersonController {
         return person;
     }
 
-    @RequestMapping(value = "/add",produces = MediaType.TEXT_HTML_VALUE)
-    @ResponseStatus(HttpStatus.CREATED)
-    public void add(@RequestBody(required = false) Person person) {
-        System.out.printf("11111");
+    @RequestMapping(value = "/add")
+    public Person add(Person person) {
+        return person ;
     }
-//    public void add(@RequestBody Person person) {
-//        System.out.printf(person.getName());
-//    }
-
-
 
     @GetMapping("/getHeader")
     public Map<String, String> getHeader(@RequestHeader("Host") String host,

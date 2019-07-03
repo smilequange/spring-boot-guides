@@ -10,7 +10,9 @@ import org.springframework.stereotype.Component;
 public class MethodAspect {
 
   @Pointcut(value = "execution(public * cn.jantd.aop.controller.*.*())")
-  public void webLog(){}
+  public void webLog(){
+    System.out.println(" web log");
+  }
 
   @Around(value = "webLog()")
   public Object around(ProceedingJoinPoint pjp) throws Throwable {
